@@ -1,6 +1,7 @@
 
 import express from 'express'
 import dotenv from "dotenv"
+import cookieParser from 'cookie-parser'
 
 // import all routes
 import userRoutes from "./routes/user.routes"
@@ -10,6 +11,8 @@ const app = express()
 const port = process.env.PORT || 3000
 
 dotenv.config()
+
+app.use(cookieParser())
 
 app.use(
   cors({
