@@ -1,4 +1,4 @@
-import User from "../model/User.model";
+import User from "../middleware/model/User.model";
 import nodemailer from "nodemailer"
 import crypto from 'crypto'
 import jwt from "jsonwebtoken"
